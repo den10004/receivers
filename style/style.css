@@ -1,23 +1,2 @@
-@import "./normalize.css";
 @import "./header.css";
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 100%;
-  background: white;
-  font-family: "Onest", sans-serif;
-}
-
-
-:root {
-  --color-active: #FDD803;
-  --color-deactive: #FFF09A;
-  --color-dark: #2B2B2B;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "./normalize.css";

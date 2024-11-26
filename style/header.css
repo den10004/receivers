@@ -1,3 +1,251 @@
-header {
-    color: red;
+.header__block {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left__head {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.left__head>svg {
+    margin-right: 20px;
+}
+
+.left__head>span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--color-gray);
+}
+
+.header__right {
+    position: relative;
+    width: 696px;
+}
+
+.header__right>img {
+    width: 696px;
+    height: auto;
+}
+
+.header__right>ul {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    --color-dark: #2B2B2B;
+    margin-top: 50px;
+}
+
+.header__right>ul>li {
+    display: inline;
+}
+
+.header__right>ul li:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.link__head>a {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    align-items: center;
+}
+
+.link-ring {
+    background-color: var(--color-active);
+    border-radius: 50%;
+    width: 78px;
+    height: 78px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.link-ring>svg {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.link-ring:hover {
+    background-color: var(--color-deactive);
+}
+
+.header__tags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 805px;
+    margin-top: 114px;
+}
+
+.header__tags>li {
+    padding: 10px 15px;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.5px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--color-dark);
+    background-color: var(--color-grayf6);
+    margin-bottom: 10px;
+}
+
+.header__tags>li:not(:last-child) {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+    .header__tags {
+        width: 80%;
+        margin-top: 75px;
+    }
+
+    .header__right {
+        width: 600px;
+    }
+
+    .header__right>img {
+        width: 600px;
+        height: auto;
+    }
+
+    .link-ring {
+        width: 60px;
+        height: 60px;
+    }
+
+    .link-ring>svg {
+        width: 35%;
+    }
+
+    .left__head>svg {
+        width: 250px;
+    }
+
+    .left__head>span {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+}
+
+
+@media screen and (max-width: 1280px) {
+    .header__right {
+        width: 500px;
+    }
+
+    .header__right>img {
+        width: 500px;
+    }
+
+    .header__tags {
+        margin-top: 36px;
+        width: 100%;
+    }
+
+    .header__tags>li {
+        font-size: 16px;
+    }
+
+    .link__head>a {
+        font-size: 20px;
+    }
+
+    .link-ring {
+        width: 50px;
+        height: 50px;
+    }
+
+    .left__head>svg {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header__right {
+        width: 450px;
+    }
+
+    .header__right>img {
+        width: 450px;
+    }
+
+    .header__tags>li {
+        font-size: 14px;
+    }
+
+    .header__tags>li {
+        padding: 5px 10px;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+    }
+
+    .left__head>svg {
+        width: 150px;
+    }
+
+    .left__head>span {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .header__block {
+        margin-top: 30px;
+    }
+
+    .left__head {
+        margin-top: 30px;
+    }
+
+    .header__right>ul {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header__right {
+        width: 350px;
+    }
+
+    .header__right>img {
+        width: 350px;
+    }
+
+    .header__tags>li {
+        font-size: 12px;
+    }
 }
