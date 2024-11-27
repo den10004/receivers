@@ -60,11 +60,6 @@
 }
 
 
-.product_thumbnail {
-    margin-top: 10px;
-
-}
-
 .product__price {
     border-radius: 24px;
     width: 408px;
@@ -138,6 +133,64 @@
     display: none;
 }
 
+
+
+.swiper-pagination-bullet-active {
+    background: var(--color-active);
+}
+
+.product__desc {
+    margin-top: 90px;
+}
+
+.product__desc>.description {
+    margin-top: 45px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: var(--color-grayfa);
+    width: 100%;
+    padding: 50px 30px 30px 50px;
+    box-sizing: border-box;
+    z-index: 5;
+    margin-top: 60px;
+}
+
+.desc-ul {
+    list-style: none;
+    margin-top: 45px;
+}
+
+.desc-ul li:before {
+    content: "—";
+    position: relative;
+    left: -5px;
+}
+
+.show {
+    display: block;
+}
+
+.product__desc>button {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    background: none;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.product__desc>button>svg {
+    margin-left: 10px;
+}
+
+
+.desc-second {
+    margin-top: 85px;
+}
+
 @media screen and (max-width: 1440px) {
     .slide-card-max>img {
         width: 100%;
@@ -181,7 +234,17 @@
     .thumbs-slider>img {
         width: 100%;
     }
+
+    .dropdown-content {
+        padding: 30px 20px 20px 20px;
+        margin-top: 30px;
+    }
+
+    .desc-ul {
+        margin-top: 20px;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     .product__price {
@@ -281,8 +344,32 @@
     .pagination-min {
         display: block;
     }
-}
 
-.swiper-pagination-bullet-active {
-    background: var(--color-active) !important;
+    .description {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .product__desc {
+        margin-top: 40px;
+    }
+
+    .product__desc>.description {
+        margin-top: 20px;
+    }
+
+    .product__desc>button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product__desc>button>svg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .desc-second {
+        margin-top: 30px;
+    }
+
 }

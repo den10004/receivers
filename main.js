@@ -37,3 +37,17 @@ var swiper2 = new Swiper(".mySwiper2", {
     el: ".swiper-pagination",
   },
 });
+
+const dropCheckmark = document.querySelector(".drop-checkmark");
+
+function toggleDropdown() {
+  const dropdown = document.getElementById("dropdown");
+  if (dropdown.classList.contains("show")) {
+    dropCheckmark.style.transform = "rotate(180deg)";
+    dropdown.classList.remove("show");
+  } else {
+    setTimeout(() => {
+      dropdown.classList.add("show");
+    }, 500);
+  }
+}
