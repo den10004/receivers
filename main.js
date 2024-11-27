@@ -22,6 +22,7 @@ document.querySelector("#app").innerHTML = `
 
 setupCounter(document.querySelector("#counter"));
 */
+
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
   slidesPerView: 4,
@@ -38,16 +39,61 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
-const dropCheckmark = document.querySelector(".drop-checkmark");
+var swiper3 = new Swiper(".mySwiper3", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper4 = new Swiper(".mySwiper4", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
-function toggleDropdown() {
-  const dropdown = document.querySelector(".dropdown");
-  if (dropdown.classList.contains("show")) {
-    dropCheckmark.style.transform = "rotate(180deg)";
-    dropdown.classList.remove("show");
+var swiper5 = new Swiper(".mySwiper5", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper6 = new Swiper(".mySwiper6", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+var swiper7 = new Swiper(".mySwiper7", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper8 = new Swiper(".mySwiper8", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+function toggleDropdown(button) {
+  const dropdownContent = button.nextElementSibling;
+  if (dropdownContent.classList.contains("hidden")) {
+    dropdownContent.classList.remove("hidden");
+    dropdownContent.classList.add("show");
   } else {
-    setTimeout(() => {
-      dropdown.classList.add("show");
-    }, 500);
+    dropdownContent.classList.remove("show");
+    dropdownContent.classList.add("hidden");
   }
 }

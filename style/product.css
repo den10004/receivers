@@ -168,10 +168,6 @@
     left: -5px;
 }
 
-.show {
-    display: block;
-}
-
 .product__desc>button {
     font-size: 32px;
     font-weight: 500;
@@ -189,6 +185,19 @@
 
 .desc-second {
     margin-top: 85px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.thumbs-slider {
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -310,7 +319,7 @@
         border-radius: 16px;
     }
 
-    .mySwiper {
+    .pagin {
         display: none;
     }
 
