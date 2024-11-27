@@ -60,7 +60,7 @@
 }
 
 .header__right>ul li:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 40px;
 }
 
 .header__left {
@@ -84,7 +84,7 @@
     width: 78px;
     height: 78px;
     position: relative;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .link-ring>svg {
@@ -106,7 +106,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 805px;
-    margin-top: 114px;
+    margin-top: 120px;
 }
 
 .header__tags>li {
@@ -132,13 +132,13 @@
 .headline-h1 {
     font-size: 73px;
     font-weight: 600;
-    line-height: 80.6px;
+    line-height: 84.6px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: var(--color-dark);
     text-transform: uppercase;
-    margin: 126px 0 75px 0;
+    margin: 133px 0 78px 0;
 }
 
 

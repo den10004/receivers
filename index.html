@@ -152,10 +152,8 @@
         <div class="product__card">
           <div class="product__slider">
             <div
-              style="
-                --swiper-navigation-color: #fff;
-                --swiper-pagination-color: #fff;
-              "
+              style="--swiper-pagination-color: --color-active
+              --swiper-pagination-bullet-active-color: --color-active"
               class="swiper mySwiper2"
             >
               <div class="swiper-wrapper product_thumbnail">
@@ -169,7 +167,9 @@
                   <img src="./images/Tone Winner AT - 3000.webp" />
                 </div>
               </div>
+              <div class="swiper-pagination pagination-min"></div>
             </div>
+
             <div thumbsSlider="" class="swiper mySwiper product_thumbnail">
               <div class="swiper-wrapper">
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
@@ -178,13 +178,42 @@
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
-                <div class="swiper-slide slide-card thumbs-slider slide-style">
-                  <img src="./images/toneWinnerAt-3000min.webp" />
-                </div>
               </div>
             </div>
           </div>
-          <div>dsfd</div>
+          <div class="product__price">
+            <div class="status">В наличии</div>
+            <div class="subtitle">269 990 ₽</div>
+            <div class="price__block">
+              <div>
+                <div class="conditions">Самовывоз</div>
+                <div class="delivery">бесплатно</div>
+              </div>
+              <div>
+                <div class="conditions">
+                  Доставка <br />
+                  (условия доставки)
+                </div>
+                <div class="delivery">бесплатно</div>
+              </div>
+            </div>
+
+            <button>
+              Получить консультацию
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.05394 0.13208L2.05394 3.97823L18.5732 3.97823L0.130859 22.4205L2.8424 25.1321L21.2847 6.68977L21.2847 23.209L25.1309 23.209L25.1309 0.13208L2.05394 0.13208Z"
+                  fill="#2B2B2B"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </div>

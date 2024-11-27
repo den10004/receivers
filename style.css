@@ -7,6 +7,7 @@
   --color-gray: #A7A7A7;
   --color-grayf6: #F6F6F6;
   --color-grayfa: #FAFAFA;
+  --color-gray81: #818181;
   --color-gray1a: #0000001A;
 }
 
@@ -32,6 +33,7 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 .wrap {
@@ -70,4 +72,39 @@ button {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: var(--color-dark);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .subtitle {
+    font-size: 38px;
+  }
+
+  .headline {
+    font-size: 54px;
+    line-height: 73px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 30px;
+  }
+
+  .headline {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .subtitle {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .headline {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
