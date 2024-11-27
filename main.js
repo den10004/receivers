@@ -41,7 +41,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 const dropCheckmark = document.querySelector(".drop-checkmark");
 
 function toggleDropdown() {
-  const dropdown = document.getElementById("dropdown");
+  const dropdown = document.querySelector(".dropdown");
   if (dropdown.classList.contains("show")) {
     dropCheckmark.style.transform = "rotate(180deg)";
     dropdown.classList.remove("show");
