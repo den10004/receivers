@@ -39,54 +39,6 @@ button {
   margin: 0 auto;
 }
 
-.headline-h1 {
-  font-size: 73px;
-  font-weight: 600;
-  line-height: 80.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: var(--color-dark);
-  text-transform: uppercase;
-  margin: 126px 0 75px 0;
-}
-
-
-
-
-@media screen and (max-width: 1650px) {
-  .headline-h1 {
-    font-size: 62px;
-    line-height: 75px;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .headline-h1 {
-    font-size: 50px;
-    line-height: 65px;
-    margin: 50px 0 35px 0;
-  }
-
-}
-
-@media screen and (max-width: 1280px) {
-  .headline-h1 {
-    font-size: 40px;
-    line-height: 45px;
-  }
-}
-
-
-@media screen and (max-width: 1024px) {
-  .headline-h1 {
-    font-size: 35px;
-    line-height: 35px;
-  }
-}
-
-
-
 .headline {
   font-size: 64px;
   font-weight: 600;
