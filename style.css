@@ -43,7 +43,6 @@ button {
   text-align: center;
   padding: 30px 0;
   border-radius: 45px;
-  background: none;
   color: var(--color-dark);
   background: var(--color-active);
 }
@@ -77,7 +76,7 @@ button {
 
 
 .wrap {
-  max-width: 1704px;
+  max-width: 1724px;
   padding: 0 10px 0 10px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -117,6 +116,43 @@ button {
 .readAll {
   background: none;
   align-items: center;
+}
+
+input {
+  /* width: 520px;*/
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-gray);
+}
+
+label {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #737373;
+}
+
+.form__block>input {
+  margin-top: 15px;
+}
+
+
+.accept {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: var(--color-gray);
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -167,5 +203,25 @@ button {
   .description {
     font-size: 16px;
     line-height: 25px;
+  }
+
+  .accept {
+    font-size: 11px;
+    line-height: 14.4px;
+
+  }
+
+  input::placeholder {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .form__block>input {
+    margin-top: 5px;
   }
 }
