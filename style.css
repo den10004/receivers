@@ -2,7 +2,7 @@
 
 :root {
   --color-active: #FDD803;
-  --color-deactive: #FFF09A;
+  --color-hover: #FFF09A;
   --color-dark: #2B2B2B;
   --color-gray: #A7A7A7;
   --color-grayf6: #F6F6F6;
@@ -36,15 +36,52 @@ button {
   border: none;
 }
 
-.wrap {
-  max-width: 1744px;
-  padding: 0 20px 0 20px;
-  box-sizing: border-box;
-  margin: 0 auto;
+.button-yellow {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  padding: 30px 0;
+  border-radius: 45px;
+  background: none;
+  color: var(--color-dark);
+  background: var(--color-active);
+}
+
+.button-yellow:hover {
+  background: var(--color-hover);
+}
+
+@media screen and (max-width: 1024px) {
+  .button-yellow {
+    font-size: 16px;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-yellow {
+    font-size: 12px;
+    padding: 10px 0;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button-yellow {
+    font-size: 16px;
+    padding: 20px 0;
+    border-radius: 45px;
+  }
 }
 
 
-
+.wrap {
+  max-width: 1704px;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
 
 .headline {
   font-size: 64px;
@@ -77,6 +114,10 @@ button {
   color: var(--color-dark);
 }
 
+.readAll {
+  background: none;
+  align-items: center;
+}
 
 @media screen and (max-width: 1024px) {
   .subtitle {

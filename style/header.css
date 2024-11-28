@@ -99,7 +99,7 @@
 }
 
 .link-ring:hover {
-    background-color: var(--color-deactive);
+    background-color: var(--color-hover);
 }
 
 .header__tags {
