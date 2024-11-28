@@ -3,7 +3,7 @@
     background-image: url(../images/form-bg.webp);
     background-repeat: no-repeat;
     border-radius: 30px;
-    padding: 65px 75px 70px 60px;
+    padding: 70px 75px 92px 66px;
     box-sizing: border-box;
     width: 100%;
     background-size: cover;
@@ -118,6 +118,7 @@
 
     .formhelp {
         padding: 30px 10px;
+        border-radius: 16px;
     }
 
     .accept {

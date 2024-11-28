@@ -1,0 +1,125 @@
+.footer {
+    margin-top: 160px;
+}
+
+.footer-bg {
+    background: var(--color-grayfa);
+    padding: 50px 20px 50px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.footer-min {
+    display: none;
+}
+
+.footer-max {
+    display: block;
+}
+
+
+.footer-bg>.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.footer__logo>svg {
+    margin-bottom: 10px;
+}
+
+.footer__logo>span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.6px;
+    text-align: left;
+    color: var(--color-gray);
+}
+
+.footer__politic {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--color-gray);
+    margin-top: 75px;
+}
+
+.footer-bg>.wrap>button {
+    padding: 27px;
+    width: 457px;
+    height: 80px;
+}
+
+.footer-bg>.wrap>button>svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .footer__logo>svg {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-bg>.wrap>button {
+        padding: 0;
+        width: 270px;
+        height: 70px;
+    }
+
+    .footer-bg>.wrap>button>svg {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer-bg {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .footer__logo>svg {
+        width: 168px;
+    }
+
+    .footer__logo>span {
+        font-size: 14px;
+    }
+
+    .footer-bg>.wrap {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .footer-btn {
+        margin: 20px 0 20px 0;
+    }
+
+    .footer-min {
+        display: block;
+    }
+
+    .footer-max {
+        display: none;
+    }
+
+    .footer__politic {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+}
