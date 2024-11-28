@@ -40,12 +40,6 @@
 
 }
 
-.form-btn>button>svg {
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-}
-
 @media screen and (max-width: 1700px) {
     .form__block {
         width: calc((100% / 2.8));
@@ -83,13 +77,6 @@
 
     .form__block>input {
         height: 70px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .form-btn>button>svg {
-        width: 10px;
-        height: 10px;
     }
 }
 

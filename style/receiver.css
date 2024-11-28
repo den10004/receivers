@@ -20,12 +20,6 @@
 }
 
 
-.receiver>button>svg {
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-}
-
 .receiver__headline {
     display: flex;
     justify-content: space-between;
@@ -106,11 +100,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .receiver>button>svg {
-        width: 10px;
-        height: 10px;
-    }
-
     .receiver>button {
         margin-top: 30px;
         padding: 25px 30px 25px 30px;

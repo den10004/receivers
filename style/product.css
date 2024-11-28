@@ -71,6 +71,10 @@
     flex-direction: column;
 }
 
+.product__price>button {
+    font-size: 20px !important;
+}
+
 .status {
     font-size: 20px;
     font-weight: 500;
@@ -114,11 +118,6 @@
     width: 100%;
     margin-top: auto;
 
-}
-
-.product__price>button>svg {
-    width: 15px;
-    height: 15px;
 }
 
 .pagination-min {
@@ -165,9 +164,6 @@
     display: flex;
 }
 
-.product__desc>button>svg {
-    margin-left: 10px;
-}
 
 
 .desc-second {
@@ -339,11 +335,6 @@
     .product__desc>button {
         font-size: 16px;
         line-height: 24px;
-    }
-
-    .product__desc>button>svg {
-        width: 10px;
-        height: 10px;
     }
 
     .desc-second {
