@@ -1,14 +1,14 @@
 @import "./style/style.css";
 
 :root {
-  --color-active: #FDD803;
-  --color-hover: #FFF09A;
-  --color-dark: #2B2B2B;
-  --color-gray: #A7A7A7;
-  --color-grayf6: #F6F6F6;
-  --color-grayfa: #FAFAFA;
+  --color-active: #fdd803;
+  --color-hover: #fff09a;
+  --color-dark: #2b2b2b;
+  --color-gray: #a7a7a7;
+  --color-grayf6: #f6f6f6;
+  --color-grayfa: #fafafa;
   --color-gray81: #818181;
-  --color-gray1a: #0000001A;
+  --color-gray1a: #0000001a;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-  list-style-type: none
+  list-style-type: none;
 }
 
 a {
@@ -51,7 +51,7 @@ button {
   background: var(--color-hover);
 }
 
-.button-yellow>svg {
+.button-yellow > svg {
   width: 15px;
   height: 15px;
   margin-left: 10px;
@@ -63,7 +63,7 @@ button {
     padding: 20px 0;
   }
 
-  .button-yellow>svg {
+  .button-yellow > svg {
     width: 10px;
     height: 10px;
   }
@@ -85,14 +85,12 @@ button {
   }
 }
 
-
 .wrap {
   max-width: 1724px;
   padding: 0 10px 0 10px;
   box-sizing: border-box;
   margin: 0 auto;
 }
-
 
 .wrap-without-padding {
   max-width: 1704px;
@@ -119,7 +117,6 @@ button {
   text-decoration-skip-ink: none;
   color: var(--color-dark);
 }
-
 
 .description {
   font-size: 32px;
@@ -159,10 +156,9 @@ label {
   color: #737373;
 }
 
-.form__block>input {
+.form__block > input {
   margin-top: 15px;
 }
-
 
 .accept {
   font-size: 16px;
@@ -173,11 +169,10 @@ label {
   margin-top: 10px;
 }
 
-
 .headline-style {
   font-size: 64px;
   font-weight: 600;
-  line-height: 83.2px;
+  line-height: 130%;
   color: var(--color-dark);
 }
 
@@ -187,7 +182,6 @@ label {
     line-height: 63px;
   }
 }
-
 
 @media screen and (max-width: 1100px) {
   .headline-style {
@@ -254,7 +248,6 @@ label {
     line-height: 30px;
   }
 
-
   .description {
     font-size: 16px;
     line-height: 25px;
@@ -268,7 +261,6 @@ label {
   .accept {
     font-size: 11px;
     line-height: 14.4px;
-
   }
 
   input::placeholder {
@@ -281,7 +273,7 @@ label {
     line-height: 16.8px;
   }
 
-  .form__block>input {
+  .form__block > input {
     margin-top: 5px;
   }
 }
