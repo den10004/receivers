@@ -97,3 +97,18 @@ function toggleDropdown(button) {
     dropdownContent.classList.add("hidden");
   }
 }
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute("href"));
+    if (!target) return;
+
+    const topOffset = target.offsetTop;
+    window.scrollTo({
+      top: topOffset,
+      behavior: "smooth",
+    });
+  });
+});

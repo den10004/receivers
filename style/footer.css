@@ -111,4 +111,7 @@
         font-size: 16px;
     }
 
+    .footer-bg>.wrap>button {
+        width: 100%;
+    }
 }
