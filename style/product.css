@@ -229,6 +229,10 @@
     .desc-ul {
         margin-top: 20px;
     }
+
+    .product__price>button {
+        font-size: 15px !important;
+    }
 }
 
 
@@ -339,5 +343,9 @@
 
     .desc-second {
         margin-top: 30px;
+    }
+
+    .thumbsSlider {
+        display: none;
     }
 }

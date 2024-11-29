@@ -38,7 +38,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     el: ".swiper-pagination",
   },
 });
-
+/*
 var swiper3 = new Swiper(".mySwiper3", {
   spaceBetween: 10,
   slidesPerView: 4,
@@ -86,7 +86,7 @@ var swiper8 = new Swiper(".mySwiper8", {
     el: ".swiper-pagination",
   },
 });
-
+*/
 function toggleDropdown(button) {
   const dropdownContent = button.nextElementSibling;
   if (dropdownContent.classList.contains("hidden")) {
