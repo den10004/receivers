@@ -164,3 +164,17 @@ openCompilationModal.forEach((el) =>
     openConsultCompilationFunc();
   })
 );
+
+function consultSubmit(event) {
+  event.preventDefault();
+
+  const form = document.getElementById("consultForm");
+  const data = new FormData(form);
+
+  let result = {};
+  for (const [key, value] of data.entries()) {
+    result[key] = value;
+  }
+
+  console.log(result);
+}

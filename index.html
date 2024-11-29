@@ -977,14 +977,28 @@
           по выбору AV-ресивера
         </h2>
 
-        <form class="from__modal">
+        <form
+          class="from__modal"
+          id="consultForm"
+          onsubmit="consultSubmit(event)"
+        >
           <div class="form__wrap mb10">
-            <label>Введите ваше имя</label>
-            <input placeholder="Игорь Пертрович" />
+            <label for="name">Введите ваше имя</label>
+            <input
+              placeholder="Игорь Пертрович"
+              type="text"
+              id="name"
+              name="name"
+            />
           </div>
           <div class="form__wrap">
-            <label>Введите ваш телефон</label>
-            <input placeholder="+7 (___) __-__-__" type="tel" />
+            <label for="tel">Введите ваш телефон</label>
+            <input
+              placeholder="+7 (___) __-__-__"
+              type="tel"
+              id="tel"
+              name="tel"
+            />
           </div>
 
           <div class="accept">
@@ -1020,14 +1034,24 @@
           Отправьте заявку и получите подборку акустики для «модели ресивера»
         </h2>
 
-        <form class="from__modal">
+        <form class="from__modal" onsubmit="compilationSubmit(event)">
           <div class="form__wrap mb10">
-            <label>Введите ваше имя</label>
-            <input placeholder="Игорь Пертрович" />
+            <label for="name">Введите ваше имя</label>
+            <input
+              placeholder="Игорь Пертрович"
+              type="text"
+              id="name"
+              name="name"
+            />
           </div>
           <div class="form__wrap">
-            <label>Введите ваш телефон</label>
-            <input placeholder="+7 (___) __-__-__" type="tel" />
+            <label for="tel">Введите ваш телефон</label>
+            <input
+              placeholder="+7 (___) __-__-__"
+              type="tel"
+              id="tel"
+              name="tel"
+            />
           </div>
 
           <div class="accept">
