@@ -165,16 +165,57 @@ openCompilationModal.forEach((el) =>
   })
 );
 
-function consultSubmit(event) {
-  event.preventDefault();
-
+document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("consultForm");
-  const data = new FormData(form);
+  const responseMessage = document.getElementById("responseMessage");
 
-  let result = {};
-  for (const [key, value] of data.entries()) {
-    result[key] = value;
-  }
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
 
-  console.log(result);
-}
+    try {
+      const formData = new FormData(form);
+      const response = await fetch("sendforms.php", {
+        method: "POST",
+        body: formData,
+      });
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+
+      const message = await response.text();
+      responseMessage.textContent = message;
+      console.log(response);
+    } catch (error) {
+      console.error("Произошла ошибка при отправке формы.", error);
+      responseMessage.textContent = "Произошла ошибка при отправке формы.";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("compilationForm");
+  const responseMessage = document.getElementById("responseMessage");
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch("sendforms.php", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+
+      const message = await response.text();
+      responseMessage.textContent = message;
+      console.log(response);
+    } catch (error) {
+      console.error("Произошла ошибка при отправке формы.", error);
+      responseMessage.textContent = "Произошла ошибка при отправке формы.";
+    }
+  });
+});

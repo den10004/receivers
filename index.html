@@ -26,6 +26,10 @@
 
   <body>
     <div class="wrap">
+      <div
+        id="responseMessage"
+        style="position: absolute; top: 1050px; z-index: 5; left: 50%"
+      ></div>
       <section class="header">
         <div class="header__block">
           <div class="header__left">
@@ -977,11 +981,7 @@
           по выбору AV-ресивера
         </h2>
 
-        <form
-          class="from__modal"
-          id="consultForm"
-          onsubmit="consultSubmit(event)"
-        >
+        <form class="from__modal" id="consultForm">
           <div class="form__wrap mb10">
             <label for="name">Введите ваше имя</label>
             <input
@@ -1034,7 +1034,7 @@
           Отправьте заявку и получите подборку акустики для «модели ресивера»
         </h2>
 
-        <form class="from__modal" onsubmit="compilationSubmit(event)">
+        <form class="from__modal" id="compilationForm">
           <div class="form__wrap mb10">
             <label for="name">Введите ваше имя</label>
             <input
