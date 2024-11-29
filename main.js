@@ -112,3 +112,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+const headerOpen = document.querySelector(".header-open");
+const headerMenu = document.querySelector(".header__menu");
+const closeAllModal = document.querySelectorAll(".closeAllModal");
+const popup = document.querySelectorAll(".popup");
+
+function closeAllModals() {
+  popup.forEach((el) => (el.style.display = "none"));
+  document.body.style.overflow = "";
+}
+
+function openHeader() {
+  headerMenu.style.display = "block";
+}
+
+headerOpen.addEventListener("click", openHeader);
+
+closeAllModal.forEach((el) =>
+  el.addEventListener("click", function (e) {
+    closeAllModals();
+  })
+);
