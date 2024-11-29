@@ -114,7 +114,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 const headerOpen = document.querySelector(".header-open");
-const headerMenu = document.querySelector(".header__menu");
+const headerMenu = document.querySelector(".header__links");
 const openConsultModal = document.querySelectorAll(".cons-open");
 const openCompilationModal = document.querySelectorAll(".compilationOpenModal");
 const closeAllModal = document.querySelectorAll(".closeAllModal");
@@ -134,7 +134,7 @@ function closeAllModals() {
 }
 
 function openHeader() {
-  headerMenu.style.display = "block";
+  headerMenu.style.display = "flex";
 }
 
 function openConsultModalFunc() {
