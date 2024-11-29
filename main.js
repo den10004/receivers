@@ -115,8 +115,18 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 const headerOpen = document.querySelector(".header-open");
 const headerMenu = document.querySelector(".header__menu");
+const openConsultModal = document.querySelectorAll(".cons-open");
+const openCompilationModal = document.querySelectorAll(".compilationOpenModal");
 const closeAllModal = document.querySelectorAll(".closeAllModal");
 const popup = document.querySelectorAll(".popup");
+const consultModal = document.querySelector(".popup-consultation");
+const CompilationModal = document.querySelector(".popup-compilation");
+
+document.body.addEventListener("keydown", function (e) {
+  if (e.key == "Escape") {
+    closeAllModals();
+  }
+});
 
 function closeAllModals() {
   popup.forEach((el) => (el.style.display = "none"));
@@ -127,10 +137,30 @@ function openHeader() {
   headerMenu.style.display = "block";
 }
 
+function openConsultModalFunc() {
+  consultModal.style.display = "block";
+}
+
+function openConsultCompilationFunc() {
+  CompilationModal.style.display = "block";
+}
+
 headerOpen.addEventListener("click", openHeader);
 
 closeAllModal.forEach((el) =>
   el.addEventListener("click", function (e) {
     closeAllModals();
+  })
+);
+
+openConsultModal.forEach((el) =>
+  el.addEventListener("click", function (e) {
+    openConsultModalFunc();
+  })
+);
+
+openCompilationModal.forEach((el) =>
+  el.addEventListener("click", function (e) {
+    openConsultCompilationFunc();
   })
 );

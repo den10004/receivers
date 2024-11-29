@@ -63,7 +63,7 @@
 .product__price {
     border-radius: 24px;
     width: 408px;
-    box-shadow: 0px 4px 50px 0px var(--color-gray1a);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
     height: 600px;
     padding: 30px 35px 40px 35px;
     box-sizing: border-box;

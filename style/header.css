@@ -8,6 +8,10 @@
     position: relative;
 }
 
+.header__menu {
+    display: none;
+}
+
 .headimg-min {
     display: none;
 }
@@ -76,9 +80,8 @@
     font-weight: 500;
     line-height: 28.8px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     display: flex;
+    color: var(--color-dark);
     align-items: center;
 }
 
@@ -268,7 +271,7 @@
     }
 
     .header__block {
-        margin-top: 0px;
+        margin-top: 30px;
     }
 
     .left__head {

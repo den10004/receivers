@@ -24,10 +24,6 @@
     width: 520px;
 }
 
-.form__block>input {
-    height: 80px;
-}
-
 .form-btn {
     display: flex;
 
