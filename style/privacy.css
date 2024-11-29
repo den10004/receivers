@@ -1,0 +1,18 @@
+.politic {
+    margin-top: 150px;
+}
+
+.politic>h2 {
+    margin: 50px 0 30px 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .politic {
+        margin-top: 50px;
+    }
+
+    .politic>h2 {
+        margin: 40px 0 20px 0;
+    }
+}
