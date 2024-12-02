@@ -15,7 +15,7 @@
     height: auto;
     max-height: 95vh;
     position: absolute;
-    top: 10vh;
+    top: 5vh;
     right: 0;
     bottom: 0;
     left: 0;
@@ -44,7 +44,7 @@
     }
 
     to {
-        top: 10vh;
+        top: 5vh;
         opacity: 1;
     }
 }
@@ -56,7 +56,7 @@
     }
 
     to {
-        top: 10vh;
+        top: 5vh;
         opacity: 1;
     }
 }

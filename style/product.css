@@ -31,6 +31,7 @@
 .slide-style {
     border-radius: 24px;
     background-color: var(--color-grayfa);
+    cursor: pointer;
 
 }
 
@@ -125,6 +126,24 @@
 }
 
 
+.block {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.readAll::after {
+    content: url(./../images/arrow.svg);
+    width: 24px;
+    margin-left: 10px;
+
+}
+
+.readAll-rotate {
+    transform: rotate(180deg);
+}
 
 .swiper-pagination-bullet-active {
     background: var(--color-active);
@@ -139,7 +158,6 @@
 }
 
 .dropdown-content {
-    display: none;
     background-color: var(--color-grayfa);
     width: 100%;
     padding: 50px 30px 30px 50px;
@@ -170,11 +188,12 @@
     margin-top: 85px;
 }
 
+/*
 
 .hidden {
     display: none;
 }
-
+*/
 .show {
     display: block;
 }

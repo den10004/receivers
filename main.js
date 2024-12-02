@@ -23,14 +23,18 @@ document.querySelector("#app").innerHTML = `
 setupCounter(document.querySelector("#counter"));
 */
 
-function toggleDropdown(button) {
-  const dropdownContent = button.nextElementSibling;
-  if (dropdownContent.classList.contains("hidden")) {
-    dropdownContent.classList.remove("hidden");
-    dropdownContent.classList.add("show");
+function toggleBlock(blockId) {
+  const block = document.getElementById(blockId);
+  const readAll = document.querySelector(".readAll");
+  const readAllAfter = window.getComputedStyle(readAll, "::after");
+  if (block.classList.contains("show")) {
+    block.classList.remove("show");
+    block.previousElementSibling.textContent = "Читать полностью";
+    const x = window.getComputedStyle(block.previousElementSibling, "::after");
+    console.log(x.content);
   } else {
-    dropdownContent.classList.remove("show");
-    dropdownContent.classList.add("hidden");
+    block.classList.add("show");
+    block.previousElementSibling.textContent = "Скрыть блок";
   }
 }
 
