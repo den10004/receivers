@@ -29,6 +29,10 @@
     animation-duration: 0.4s;
 }
 
+.window>h2 {
+    padding-right: 20px;
+}
+
 .popup-consultation {
     display: none;
 }
