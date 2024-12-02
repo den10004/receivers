@@ -23,18 +23,19 @@ document.querySelector("#app").innerHTML = `
 setupCounter(document.querySelector("#counter"));
 */
 
+window.addEventListener("vite:preloadError", (e) => {
+  window.reload();
+});
+
 function toggleBlock(blockId) {
   const block = document.getElementById(blockId);
-  const readAll = document.querySelector(".readAll");
-  const readAllAfter = window.getComputedStyle(readAll, "::after");
+
   if (block.classList.contains("show")) {
     block.classList.remove("show");
-    block.previousElementSibling.textContent = "Читать полностью";
-    const x = window.getComputedStyle(block.previousElementSibling, "::after");
-    console.log(x.content);
+    block.previousElementSibling.innerHTML = `Читать полностью <span class="readAll"></span>`;
   } else {
     block.classList.add("show");
-    block.previousElementSibling.textContent = "Скрыть блок";
+    block.previousElementSibling.innerHTML = `Свернуть <span class="readAll-rotate"></span>`;
   }
 }
 

@@ -11,7 +11,7 @@
   background-image: url(./../images/form-bg.webp);
 }
 
-.article__img > img {
+.article__img>img {
   width: 674px;
   height: auto;
   border-radius: 24px;
@@ -23,10 +23,13 @@
   padding-right: 20px;
 }
 
-.article__text > button {
+.article__text>div {
+  margin-top: 54px;
+}
+
+.article__text>div>a {
   padding-left: 45px;
   padding-right: 45px;
-  margin-top: 54px;
 }
 
 .headline-style-article {
@@ -50,27 +53,29 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .article__img > img {
+  .article__img>img {
     width: 600px;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .article__img > img {
+  .article__img>img {
     width: 550px;
   }
+
   .headline-style-article {
     font-size: 45px;
     line-height: 50px;
   }
-  .article__text > .description {
+
+  .article__text>.description {
     font-size: 28px;
     line-height: 38px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .article__img > img {
+  .article__img>img {
     width: 450px;
   }
 }
@@ -80,40 +85,52 @@
     font-size: 36px;
     line-height: 44px;
   }
-  .article__text > .description {
+
+  .article__text>.description {
     font-size: 22px;
     line-height: 32px;
   }
-  .article__img > img {
+
+  .article__img>img {
     width: 400px;
   }
 }
+
 @media screen and (max-width: 900px) {
   .article__info {
     flex-direction: column;
   }
 
-  .article__img > img {
+  .article__img>img {
     display: flex;
     margin: 20px auto 0 auto;
   }
-  .article__text > button {
+
+  .article__text>div {
     display: flex;
+  }
+
+  .article__text>div>a {
     margin: 20px auto 0 auto;
   }
+
   .article__text {
     max-width: 100%;
     padding-right: 0;
   }
+
   .article__info {
     padding: 30px 30px 30px 30px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .article__text > button {
+  .article__text>div {
     display: flex;
     align-items: center;
+  }
+
+  .article__text>div>a {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -123,15 +140,18 @@
   .article__info {
     padding: 30px 10px 10px 10px;
   }
+
   .headline-style-article {
     font-size: 24px;
     line-height: 30px;
   }
-  .article__text > .description {
+
+  .article__text>.description {
     font-size: 16px;
     line-height: 25px;
   }
-  .article__img > img {
+
+  .article__img>img {
     width: 100%;
   }
 }
@@ -141,7 +161,8 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .article__text > button {
+
+  .article__text>div {
     font-size: 15px;
   }
 }

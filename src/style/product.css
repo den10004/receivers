@@ -137,15 +137,30 @@
     display: block;
 }
 
-.readAll::after {
-    content: url(./../images/arrow.svg);
-    width: 24px;
-    margin-left: 10px;
-
+.readAll {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(135deg);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    right: -30px;
+    top: 14px;
 }
 
+
 .readAll-rotate {
-    transform: rotate(180deg);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -160px;
+    top: 20px;
 }
 
 .swiper-pagination-bullet-active {
@@ -160,6 +175,11 @@
     margin-top: 45px;
 }
 
+.show {
+    display: block;
+    max-height: 750px;
+}
+
 .dropdown-content {
     background-color: var(--color-grayfa);
     width: 100%;
@@ -167,7 +187,10 @@
     box-sizing: border-box;
     z-index: 5;
     margin-top: 60px;
+    transition: max-height 0.4s ease-in-out;
 }
+
+
 
 .desc-ul {
     list-style: none;
@@ -183,6 +206,7 @@
 .product__desc>button {
     margin-top: 20px;
     display: flex;
+    background: none;
 }
 
 
@@ -191,9 +215,6 @@
     margin-top: 85px;
 }
 
-.show {
-    display: block;
-}
 
 @media screen and (max-width: 1440px) {
     .slide-card-max>img {
@@ -216,8 +237,6 @@
     .thumbs-slider {
         padding: 0;
     }
-
-
 
     .product__slider {
         width: calc(100% - 330px);
@@ -256,6 +275,10 @@
 
     .product__price>button {
         font-size: 15px !important;
+    }
+
+    .readAll {
+        top: 10px;
     }
 }
 
@@ -371,5 +394,25 @@
 
     .thumbsSlider {
         display: none;
+    }
+
+    .readAll {
+        top: 4px;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+    }
+
+    .readAll-rotate {
+        display: inline-block;
+        top: 9px;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        transform: rotate(-45deg);
+        position: absolute;
+        right: -100px;
     }
 }
