@@ -131,13 +131,14 @@
     line-height: 28.8px !important;
 }
 
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .window {
         padding: 20px;
+        width: 95%;
     }
+}
 
+@media screen and (max-width: 768px) {
     .closeAllModal {
         top: 0px;
         right: 15px;
@@ -159,9 +160,6 @@
 
 
 @media screen and (max-width: 500px) {
-    .window {
-        width: 95%;
-    }
 
     .modal-btn {
         font-size: 14px !important;
