@@ -21,6 +21,7 @@
 .footer-bg>.wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer__logo {
@@ -47,16 +48,16 @@
     line-height: 24px;
     text-align: left;
     color: var(--color-gray);
-    margin-top: 75px;
 }
 
+/*
 .footer-bg>.wrap>button {
     padding: 27px;
     width: 457px;
     height: 80px;
 }
 
-
+*/
 
 @media screen and (max-width: 1280px) {
     .footer__logo>svg {
@@ -64,6 +65,7 @@
     }
 }
 
+/*
 @media screen and (max-width: 1024px) {
     .footer-bg>.wrap>button {
         padding: 0;
@@ -71,7 +73,7 @@
         height: 70px;
     }
 }
-
+*/
 @media screen and (max-width: 600px) {
     .footer {
         margin-top: 50px;
@@ -94,10 +96,11 @@
         justify-content: start;
     }
 
+    /*
     .footer-btn {
         margin: 20px 0 20px 0;
     }
-
+*/
     .footer-min {
         display: block;
     }
@@ -107,11 +110,11 @@
     }
 
     .footer__politic {
-        margin-top: 30px;
         font-size: 16px;
     }
 
+    /*
     .footer-bg>.wrap>button {
         width: 100%;
-    }
+    }*/
 }

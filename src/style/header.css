@@ -26,6 +26,7 @@
 
 }
 
+/*
 .header__links>li>a {
     font-size: 24px;
     font-weight: 400;
@@ -36,7 +37,7 @@
 .header__links li:not(:last-child) {
     margin-right: 40px;
 }
-
+*/
 .header__burger-menu {
     display: none;
 }
@@ -65,9 +66,10 @@
         margin-right: 10px;
     }
 
+    /*
     .header__links>li>a {
         font-size: 20px;
-    }
+    }*/
 
     .header__head>svg {
         width: 200px;

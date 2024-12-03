@@ -94,6 +94,14 @@
     margin: 20px 0px 45px 0;
 }
 
+.price__block {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+/*
 
 .price__block>div {
     display: flex;
@@ -105,9 +113,12 @@
     line-height: 20.8px;
 }
 
+/*
+
 .price__block>div:last-child {
     margin-top: 15px;
 }
+
 
 .delivery {
     color: var(--color-gray81);
@@ -116,7 +127,7 @@
 .conditions {
     color: var(--color-dark)
 }
-
+*/
 
 .product__price>button {
     width: 100%;
@@ -358,10 +369,11 @@
         width: 140px;
     }
 
+    /*
     .price__block>div {
         font-size: 16px;
     }
-
+*/
     .product__price>.subtitle {
         margin: 20px 0px 20px 0;
     }
