@@ -30,6 +30,11 @@ body {
     background: white;
     font-family: "Onest", sans-serif;
     box-sizing: border-box;
+    overflow: auto
+}
+
+html {
+    overflow: auto
 }
 
 * {
@@ -181,6 +186,13 @@ label {
     margin-top: 10px;
 }
 
+.accept>span>a {
+    color: var(--color-gray);
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
 .headline-style {
     font-size: 64px;
     font-weight: 600;
@@ -192,10 +204,7 @@ label {
     margin-left: 10px;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
+
 
 @media screen and (max-width: 1440px) {
     .headline-style {
@@ -266,6 +275,13 @@ label {
     .readAll>svg {
         margin-left: 10px;
         width: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .accept {
+        font-size: 12px;
     }
 }
 

@@ -154,7 +154,17 @@
         flex-wrap: nowrap;
         margin-top: 20px;
         overflow-x: scroll;
+        scrollbar-width: 0;
     }
+
+    .review__block::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .review__block::-moz-scrollbar {
+        width: 0;
+    }
+
 
     .receiver__review {
         margin-top: 30px;
