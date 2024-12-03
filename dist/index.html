@@ -21,7 +21,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
-    <link rel="stylesheet" crossorigin href="/assets/style-D7tVPxMz.css">
+    <link rel="stylesheet" crossorigin href="/assets/style-sO5Pec2E.css">
   </head>
 
   <body>
@@ -88,18 +88,24 @@
             <span
               >Обзоры и рейтинги <br />
               AV оборудования</span
-            >
-          </a>
-          <ul class="header__links popup">
-            <li><a href="#">Обзор</a></li>
-            <li><a href="#">Статья</a></li>
-            <li><a href="#" style="position: relative">Контакты</a></li>
+            > </a
+          ><!--
+          <ul class="header__links popup">      
+            <li>
+        
+              <li><a href="#">Обзор</a></li>
+              <li><a href="#">Статья</a></li>
+              <li><a href="#" style="position: relative">Контакты</a></li>
+              <a href="#" style="position: relative"></a></li>
 
             <button class="closeAllModal closemenu">+</button>
+              <a href="#" style="position: relative"></a>
+            </li>
           </ul>
+  
           <button class="header__burger-menu header-open">
             <div><span></span><span></span> <span></span></div>
-          </button>
+          </button>-->
         </div>
       </section>
 
@@ -133,7 +139,7 @@
 
           <ul class="header__tags">
             <li><a href="#section1">Onkyu TX-RZ70</a></li>
-            <li><a href="#section2">Inegra DRX-8,4</a></li>
+            <li><a href="#section2">Integra DRX-8,4</a></li>
             <li><a href="#section3">Yamaha RX-A8A</a></li>
             <li><a href="#section4">Anthem MRX1140</a></li>
             <li><a href="#section5">Marantz AV40</a></li>
@@ -149,7 +155,6 @@
       </section>
 
       <section class="product">
-        <div class="product__tag">обзоры</div>
         <h2 class="headline">Tone Winner AT - 3000</h2>
 
         <div class="product__card">
@@ -162,13 +167,13 @@
               <div class="swiper-wrapper product_thumbnail">
                 <div class="swiper-slide slide-card slide-card-max slide-style">
                   <img
-                    src="/assets/Tone%20Winner%20AT%20-%203000-BphMInAb.webp"
+                    src="/assets/Tone%20Winner%20AT%20-%203000-LyOgkbZD.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
                 <div class="swiper-slide slide-card slide-card-max slide-style">
                   <img
-                    src="/assets/Tone%20Winner%20AT%20-%203000-2-B6jKFxRs.webp"
+                    src="/assets/Tone%20Winner%20AT%20-%203000-2-gzsVWZyx.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
@@ -183,13 +188,13 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
                   <img
-                    src="/assets/Tone%20Winner%20AT%20-%203000-BphMInAb.webp"
+                    src="/assets/Tone%20Winner%20AT%20-%203000-LyOgkbZD.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
                   <img
-                    src="/assets/Tone%20Winner%20AT%20-%203000-2-B6jKFxRs.webp"
+                    src="/assets/Tone%20Winner%20AT%20-%203000-2-gzsVWZyx.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
@@ -200,17 +205,7 @@
             <div class="status">В наличии</div>
             <div class="subtitle">269 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
 
             <button class="button-yellow cons-open">
@@ -233,18 +228,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block1')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block1">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block1')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block1">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -268,7 +275,10 @@
             Получите подборку акустики максимально подходящих для Tone Winner
             AT-3000
           </h2>
-          <button class="button-yellow compilationOpenModal">
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для Tone Winner AT-3000"
+          >
             Получить подборку акустики
             <svg
               width="26"
@@ -303,19 +313,19 @@
               <div class="swiper-wrapper product_thumbnail">
                 <div class="swiper-slide slide-card slide-card-max slide-style">
                   <img
-                    src="/assets/OnkyuTX-RZ70-rRAqSphI.webp"
+                    src="/assets/OnkyuTX-RZ70-otoAHso8.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
                 <div class="swiper-slide slide-card slide-card-max slide-style">
                   <img
-                    src="/assets/OnkyuTX-RZ70-2-C1lwr6vc.webp"
+                    src="/assets/OnkyuTX-RZ70-2-_vp05Tnm.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
                 <div class="swiper-slide slide-card slide-card-max slide-style">
                   <img
-                    src="/assets/OnkyuTX-RZ702-3-AunraHab.webp"
+                    src="/assets/OnkyuTX-RZ702-3-BkMN1RE0.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
@@ -330,19 +340,19 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
                   <img
-                    src="/assets/OnkyuTX-RZ70-rRAqSphI.webp"
+                    src="/assets/OnkyuTX-RZ70-otoAHso8.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
                   <img
-                    src="/assets/OnkyuTX-RZ70-2-C1lwr6vc.webp"
+                    src="/assets/OnkyuTX-RZ70-2-_vp05Tnm.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
                   <img
-                    src="/assets/OnkyuTX-RZ702-3-AunraHab.webp"
+                    src="/assets/OnkyuTX-RZ702-3-BkMN1RE0.webp"
                     alt="Tone Winner AT - 3000"
                   />
                 </div>
@@ -353,17 +363,7 @@
             <div class="status">В наличии</div>
             <div class="subtitle">349 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
 
             <button class="button-yellow cons-open">
@@ -386,18 +386,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block2')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block2">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block2')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block2">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -418,10 +430,13 @@
       <section class="info">
         <div class="info__text">
           <h2 class="headline-style">
-            Получите подборку акустики максимально подходящих для Tone Winner
-            AT-3000
+            Получите подборку акустики максимально подходящих для Onkyo TX-RZ70
+            B M2
           </h2>
-          <button class="button-yellow compilationOpenModal">
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для Onkyo TX-RZ70 B M2"
+          >
             Получить подборку акустики
             <svg
               width="26"
@@ -442,7 +457,7 @@
         </div>
       </section>
       <section class="product" id="section2">
-        <h2 class="headline">Inegra DRX-8.4</h2>
+        <h2 class="headline">Integra DRX-8.4</h2>
 
         <div class="product__card">
           <div class="product__slider">
@@ -455,19 +470,19 @@
                 <div class="swiper-slide slide-card slide-card-max slide-style">
                   <img
                     src="/assets/Indera%20drx-8.4-D4q7YR5z.webp"
-                    alt="Tone Winner AT - 3000"
+                    alt="Ingera drx-8.4"
                   />
                 </div>
                 <div class="swiper-slide slide-card slide-card-max slide-style">
                   <img
                     src="/assets/Inegra%20DRX-8.4-1-BAkmoOwn.webp"
-                    alt="Tone Winner AT - 3000"
+                    alt="Ingera drx-8.4"
                   />
                 </div>
                 <div class="swiper-slide slide-card slide-card-max slide-style">
                   <img
                     src="/assets/Inegra%20DRX-8.4-2-imhS_Hxn.webp"
-                    alt="Tone Winner AT - 3000"
+                    alt="Ingera drx-8.4"
                   />
                 </div>
               </div>
@@ -482,19 +497,19 @@
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
                   <img
                     src="/assets/Indera%20drx-8.4-D4q7YR5z.webp"
-                    alt="Tone Winner AT - 3000"
+                    alt="Ingera drx-8.4"
                   />
                 </div>
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
                   <img
                     src="/assets/Inegra%20DRX-8.4-1-BAkmoOwn.webp"
-                    alt="Tone Winner AT - 3000"
+                    alt="Ingera drx-8.4"
                   />
                 </div>
                 <div class="swiper-slide slide-card thumbs-slider slide-style">
                   <img
                     src="/assets/Inegra%20DRX-8.4-2-imhS_Hxn.webp"
-                    alt="Tone Winner AT - 3000"
+                    alt="Ingera drx-8.4"
                   />
                 </div>
               </div>
@@ -504,17 +519,7 @@
             <div class="status">В наличии</div>
             <div class="subtitle">269 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
 
             <button class="button-yellow cons-open">
@@ -537,18 +542,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block3')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block3">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block3')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block3">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -569,10 +586,13 @@
       <section class="info">
         <div class="info__text">
           <h2 class="headline-style">
-            Получите подборку акустики максимально подходящих для Tone Winner
-            AT-3000
+            Получите подборку акустики максимально подходящих для Integra
+            DRX-8.4
           </h2>
-          <button class="button-yellow compilationOpenModal">
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для Integra DRX-8.4"
+          >
             Получить подборку акустики
             <svg
               width="26"
@@ -650,17 +670,7 @@
             <div class="status">В наличии</div>
             <div class="subtitle">269 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
 
             <button class="button-yellow cons-open">
@@ -683,18 +693,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block4')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block4">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block4')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block4">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -715,10 +737,12 @@
       <section class="info">
         <div class="info__text">
           <h2 class="headline-style">
-            Получите подборку акустики максимально подходящих для Tone Winner
-            AT-3000
+            Получите подборку акустики максимально подходящих для Yamaha RX-A8A
           </h2>
-          <button class="button-yellow compilationOpenModal">
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для Yamaha RX-A8A"
+          >
             Получить подборку акустики
             <svg
               width="26"
@@ -802,17 +826,7 @@
             <div class="status">В наличии</div>
             <div class="subtitle">269 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
 
             <button class="button-yellow cons-open">
@@ -835,18 +849,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block5')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block5">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block5')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block5">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -867,10 +893,13 @@
       <section class="info">
         <div class="info__text">
           <h2 class="headline-style">
-            Получите подборку акустики максимально подходящих для Tone Winner
-            AT-3000
+            Получите подборку акустики максимально подходящих для Denon
+            AVC-X8500HA
           </h2>
-          <button class="button-yellow compilationOpenModal">
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для Denon AVC-X8500HA"
+          >
             Получить подборку акустики
             <svg
               width="26"
@@ -954,17 +983,7 @@
             <div class="status">В наличии</div>
             <div class="subtitle">269 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
 
             <button class="button-yellow cons-open">
@@ -987,18 +1006,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block6')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block6">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block6')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block6">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -1019,10 +1050,13 @@
       <section class="info">
         <div class="info__text">
           <h2 class="headline-style">
-            Получите подборку акустики максимально подходящих для Tone Winner
-            AT-3000
+            Получите подборку акустики максимально подходящих для Marantz Cinema
+            40
           </h2>
-          <button class="button-yellow compilationOpenModal">
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для Marantz Cinema 40"
+          >
             Получить подборку акустики
             <svg
               width="26"
@@ -1106,19 +1140,8 @@
             <div class="status">В наличии</div>
             <div class="subtitle">269 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
-
             <button class="button-yellow cons-open">
               Получить консультацию
               <svg
@@ -1139,18 +1162,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block7')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block7">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block7')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block7">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -1171,10 +1206,12 @@
       <section class="info">
         <div class="info__text">
           <h2 class="headline-style">
-            Получите подборку акустики максимально подходящих для Tone Winner
-            AT-3000
+            Получите подборку акустики максимально подходящих для AD T778
           </h2>
-          <button class="button-yellow compilationOpenModal">
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для AD T778"
+          >
             Получить подборку акустики
             <svg
               width="26"
@@ -1258,17 +1295,7 @@
             <div class="status">В наличии</div>
             <div class="subtitle">269 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
 
             <button class="button-yellow cons-open">
@@ -1291,18 +1318,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block8')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block8">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block8')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block8">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -1323,10 +1362,12 @@
       <section class="info">
         <div class="info__text">
           <h2 class="headline-style">
-            Получите подборку акустики максимально подходящих для Tone Winner
-            AT-3000
+            Получите подборку акустики максимально подходящих для Anthem MRX1140
           </h2>
-          <button class="button-yellow compilationOpenModal">
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для Anthem MRX1140"
+          >
             Получить подборку акустики
             <svg
               width="26"
@@ -1386,19 +1427,8 @@
             <div class="status">В наличии</div>
             <div class="subtitle">269 990 ₽</div>
             <div class="price__block">
-              <div>
-                <div class="conditions">Самовывоз</div>
-                <div class="delivery">бесплатно</div>
-              </div>
-              <div>
-                <div class="conditions">
-                  Доставка <br />
-                  (условия доставки)
-                </div>
-                <div class="delivery">бесплатно</div>
-              </div>
+              Получите консультацию по выбору AV-ресивера
             </div>
-
             <button class="button-yellow cons-open">
               Получить консультацию
               <svg
@@ -1419,18 +1449,30 @@
 
         <div class="product__desc">
           <h3 class="subtitle">Описание</h3>
-          <p class="description">
-            Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
-            разработанный компанией ToneWinner, который поддерживает современные
-            технологии Dolby Atmos/DTS:X, а также стандарты HDMI eARC, HDMl2.0 и
-            HDCP2.2. Максимальная реалистичность изображения и широкий
-            динамический диапазон Dolby Vision и HDR10 4К форматов
-          </p>
-
-          <button onclick="toggleBlock('block9')" class="description readAll">
-            Читать полностью
+          <div class="product__hidden" id="block9">
+            <p class="description">
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+              <br />
+              Tone Winner AT-3000 - это новейший 16-канальный AV-процессор,
+              разработанный компанией ToneWinner, который поддерживает
+              современные технологии Dolby Atmos/DTS:X, а также стандарты HDMI
+              eARC, HDMl2.0 и HDCP2.2. Максимальная реалистичность изображения и
+              широкий динамический диапазон Dolby Vision и HDR10 4К форматов
+            </p>
+          </div>
+          <button
+            onclick="toggleBlock('block9')"
+            class="description"
+            style="position: relative"
+          >
+            Читать полностью<span class="readAll"></span>
           </button>
-          <div class="dropdown-content block" id="block9">
+
+          <div class="dropdown-content">
             <div class="subtitle">Особенности:</div>
             <ul class="description desc-ul">
               <li>Хорошее соотношение цена/качество</li>
@@ -1447,6 +1489,36 @@
           </div>
         </div>
       </section>
+
+      <section class="info">
+        <div class="info__text">
+          <h2 class="headline-style">
+            Получите подборку акустики максимально подходящих для Arcam AVR31
+          </h2>
+          <button
+            class="button-yellow compilationOpenModal"
+            data-title="Отправьте заявку и получите подборку акустики для Arcam AVR31"
+          >
+            Получить подборку акустики
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.05394 0.13208L2.05394 3.97823L18.5732 3.97823L0.130859 22.4205L2.8424 25.1321L21.2847 6.68977L21.2847 23.209L25.1309 23.209L25.1309 0.13208L2.05394 0.13208Z"
+                fill="#2B2B2B"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="info__img">
+          <img src="/assets/acustic-Ded0UOAZ.webp" alt="акустика" />
+        </div>
+      </section>
+
       <section class="article">
         <div class="product__tag">статья</div>
         <section class="article__info">
@@ -1455,24 +1527,25 @@
               Читайте нашу статью в WhatsApp
             </h2>
             <p class="description">
-              Описание статьи, какую информацию получит пользователь прочитав
-              статью
+              Лучшие AV-ресиверы 2024 по мнению AUDIO.HOLICS
             </p>
-            <button class="button-yellow">
-              Скачать статью на WhatsApp
-              <svg
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.05394 0.13208L2.05394 3.97823L18.5732 3.97823L0.130859 22.4205L2.8424 25.1321L21.2847 6.68977L21.2847 23.209L25.1309 23.209L25.1309 0.13208L2.05394 0.13208Z"
-                  fill="#2B2B2B"
-                />
-              </svg>
-            </button>
+            <div>
+              <a class="button-yellow" href="/" download>
+                Скачать статью на WhatsApp
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.05394 0.13208L2.05394 3.97823L18.5732 3.97823L0.130859 22.4205L2.8424 25.1321L21.2847 6.68977L21.2847 23.209L25.1309 23.209L25.1309 0.13208L2.05394 0.13208Z"
+                    fill="#2B2B2B"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="article__img">
             <img src="/assets/article-CK0irGIa.webp" alt="статья" />
@@ -1500,7 +1573,7 @@
             <div class="review__block">
               <div>
                 <h6>Onkyu TX-RZ70</h6>
-                <img src="/assets/OnkyuTX-RZ70-rRAqSphI.webp" alt="OnkyuTX-RZ70" />
+                <img src="/assets/OnkyuTX-RZ70-otoAHso8.webp" alt="OnkyuTX-RZ70" />
               </div>
               <div>
                 <h6>Indera DRX-8.4</h6>
@@ -1569,7 +1642,7 @@
           </div>
 
           <button class="button-yellow">
-            Хочу полный разбор<span> выбранного</span> ресивера
+            Хочу полный разбор&nbsp;<span>выбранного</span>&nbsp;ресивера
             <svg
               width="26"
               height="26"
@@ -1690,28 +1763,8 @@
               />
             </svg>
             <span>Обзоры и рейтинги AV оборудования</span>
-
-            <a href="/" class="footer-max footer__politic"
-              >Политика конфиденциальности</a
-            >
           </div>
-
-          <button type="submit" class="button-yellow footer-btn cons-open">
-            Получить консультацию<svg
-              width="26"
-              height="26"
-              viewBox="0 0 26 26"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.05394 0.13208L2.05394 3.97823L18.5732 3.97823L0.130859 22.4205L2.8424 25.1321L21.2847 6.68977L21.2847 23.209L25.1309 23.209L25.1309 0.13208L2.05394 0.13208Z"
-                fill="#2B2B2B"
-              />
-            </svg>
-          </button>
-
-          <a href="/" class="footer-min footer__politic"
+          <a href="/" class="footer-max footer__politic"
             >Политика конфиденциальности</a
           >
         </div>
@@ -1720,7 +1773,7 @@
 
     <div class="popup-consultation darkening popup">
       <div class="window">
-        <h2 class="subtitle">
+        <h2>
           Отправьте заявку на консультацию <br />
           по выбору AV-ресивера
         </h2>
@@ -1733,6 +1786,8 @@
               type="text"
               id="name"
               name="name"
+              required
+              maxlength="3"
             />
           </div>
           <div class="form__wrap">
@@ -1774,7 +1829,7 @@
 
     <div class="popup-compilation darkening popup">
       <div class="window">
-        <h2 class="subtitle">
+        <h2 class="modal-title">
           Отправьте заявку и получите подборку акустики для «модели ресивера»
         </h2>
 
@@ -1786,6 +1841,8 @@
               type="text"
               id="name"
               name="name"
+              required
+              maxlength="3"
             />
           </div>
           <div class="form__wrap">
