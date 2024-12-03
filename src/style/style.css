@@ -98,14 +98,14 @@ button {
 }
 
 .wrap {
-    max-width: 1724px;
+    max-width: 1650px;
     padding: 0 10px 0 10px;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
 .wrap-without-padding {
-    max-width: 1704px;
+    max-width: 1650px;
     padding: 0;
     margin: 0 auto;
 }

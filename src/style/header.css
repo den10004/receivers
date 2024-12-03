@@ -37,11 +37,11 @@
 .header__links li:not(:last-child) {
     margin-right: 40px;
 }
-*/
+
 .header__burger-menu {
     display: none;
 }
-
+*/
 .header__head>span {
     font-size: 16px;
     font-weight: 400;
@@ -83,7 +83,9 @@
     }
 }
 
+/*
 @media screen and (max-width: 500px) {
+
     .header__burger-menu {
         display: flex;
         margin-right: 0;
@@ -132,4 +134,4 @@
         background: none;
     }
 
-}
+}*/

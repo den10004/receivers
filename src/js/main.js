@@ -53,9 +53,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
-
+/*
 const headerOpen = document.querySelector(".header-open");
-const headerMenu = document.querySelector(".header__links");
+const headerMenu = document.querySelector(".header__links");*/
 const openConsultModal = document.querySelectorAll(".cons-open");
 const openCompilationModal = document.querySelectorAll(".compilationOpenModal");
 const closeAllModal = document.querySelectorAll(".closeAllModal");
@@ -73,11 +73,11 @@ function closeAllModals() {
   popup.forEach((el) => (el.style.display = "none"));
   document.body.style.overflow = "";
 }
-
+/*
 function openHeader() {
   headerMenu.style.display = "flex";
 }
-
+*/
 function openConsultModalFunc() {
   consultModal.style.display = "block";
 }
@@ -85,8 +85,8 @@ function openConsultModalFunc() {
 function openConsultCompilationFunc() {
   CompilationModal.style.display = "block";
 }
-
-headerOpen.addEventListener("click", openHeader);
+/*
+headerOpen.addEventListener("click", openHeader);*/
 
 closeAllModal.forEach((el) =>
   el.addEventListener("click", function (e) {
