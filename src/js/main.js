@@ -4,7 +4,6 @@ window.addEventListener("vite:preloadError", (e) => {
 
 function toggleBlock(blockId) {
   const block = document.getElementById(blockId);
-  console.log(block);
 
   if (block.classList.contains("show")) {
     block.classList.remove("show");
@@ -58,8 +57,10 @@ function openConsultModalFunc() {
   consultModal.style.display = "block";
 }
 
-function openConsultCompilationFunc() {
+function openConsultCompilationFunc(title) {
   CompilationModal.style.display = "block";
+  const modalTitle = document.querySelector(".modal-title");
+  modalTitle.textContent = title;
 }
 /*
 headerOpen.addEventListener("click", openHeader);*/
@@ -78,7 +79,8 @@ openConsultModal.forEach((el) =>
 
 openCompilationModal.forEach((el) =>
   el.addEventListener("click", function (e) {
-    openConsultCompilationFunc();
+    const title = e.target.dataset.title;
+    openConsultCompilationFunc(title);
   })
 );
 
@@ -112,7 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("compilationForm");
   const responseMessage = document.getElementById("responseMessage");
-
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
