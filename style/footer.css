@@ -74,6 +74,20 @@
     }
 }
 */
+
+@media screen and (max-width: 768px) {
+
+    .footer-bg>.wrap {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .footer-max {
+        margin-top: 10px;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     .footer {
         margin-top: 50px;
@@ -81,6 +95,10 @@
 
     .footer-bg {
         padding: 30px 20px 30px 20px;
+    }
+
+    .footer__logo {
+        margin-right: 0;
     }
 
     .footer__logo>svg {
@@ -91,30 +109,11 @@
         font-size: 14px;
     }
 
-    .footer-bg>.wrap {
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    /*
-    .footer-btn {
-        margin: 20px 0 20px 0;
-    }
-*/
     .footer-min {
         display: block;
-    }
-
-    .footer-max {
-        display: none;
     }
 
     .footer__politic {
         font-size: 16px;
     }
-
-    /*
-    .footer-bg>.wrap>button {
-        width: 100%;
-    }*/
 }

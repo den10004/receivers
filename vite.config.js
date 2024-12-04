@@ -1,6 +1,9 @@
-export default {
+import { defineConfig } from "vite";
+import php from "vite-plugin-php";
+
+export default defineConfig({
   build: {
-    outDir: "../dist",
+    outDir: "./dist",
     emptyOutDir: true,
     rollupOptions: {
       input: {
@@ -9,14 +12,15 @@ export default {
         privacy: "./privacy.html",
       },
     },
-  },
-  server: {
-    proxy: {
-      "/api": {
-        target: "http://localhost:8000",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
+  } /*
+  plugins: [
+    php({
+      //  entry: "src/index.php",
+      entry: "./sendforms.php",
+      server: {
+        host: "0.0.0.0",
+        port: 3000,
       },
-    },
-  },
-};
+    }),
+  ],*/,
+});

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-DcGi89cq.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audio.holics</title>
     <link
@@ -13,15 +13,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <meta
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
     />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="robots" content="" />
-    <link rel="stylesheet" crossorigin href="/assets/style-sO5Pec2E.css">
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <meta name="robots" content="robots" />
+    <script type="module" crossorigin src="/assets/index-C8S1ORHh.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/style-Bb2zXxgJ.css">
   </head>
 
   <body>
@@ -117,7 +117,7 @@
           </h1>
 
           <div class="link__head">
-            <a href="/"
+            <a href="#section0"
               >Перейти к статье
 
               <div class="link-ring">
@@ -154,7 +154,8 @@
         </div>
       </section>
 
-      <section class="product">
+      <section class="product" id="section0">
+        <div class="product__tag">обзоры</div>
         <h2 class="headline">Tone Winner AT - 3000</h2>
 
         <div class="product__card">
@@ -300,7 +301,6 @@
       </section>
 
       <section class="product" id="section1">
-        <div class="product__tag">обзоры</div>
         <h2 class="headline">Onkyo TX-RZ70 B M2</h2>
 
         <div class="product__card">
@@ -1632,16 +1632,16 @@
               </div>
               <div>
                 <h6>Arcam AVR11</h6>
-                <img src="/assets/Arcam%20AVR21-B3V9zOP2.webp" alt="Arcam AVR11" />
+                <img src="/assets/arcam-avr21-B3V9zOP2.webp" alt="Arcam AVR11" />
               </div>
               <div>
                 <h6>Arcam AVR21</h6>
-                <img src="/assets/Arcam%20AVR21-B3V9zOP2.webp" alt="Arcam AVR21" />
+                <img src="/assets/arcam-avr21-B3V9zOP2.webp" alt="Arcam AVR21" />
               </div>
             </div>
           </div>
 
-          <button class="button-yellow">
+          <button class="button-yellow openChoiceModal">
             Хочу полный разбор&nbsp;<span>выбранного</span>&nbsp;ресивера
             <svg
               width="26"
@@ -1667,10 +1667,10 @@
           Отправьте заявку и наш специалист свяжется с вами
         </p>
 
-        <form class="form-help">
+        <form class="form-help" id="helpForm">
           <div class="form__block">
             <label>Введите ваше имя</label>
-            <input placeholder="Игорь Пертрович" />
+            <input placeholder="Игорь Пертрович" required minlength="3" />
           </div>
           <div class="form__block">
             <label>Введите ваш телефон</label>
@@ -1696,7 +1696,9 @@
         <div class="accept">
           <span
             >Нажимая кнопку "Отправить", я подтверждаю, что ознакомлен и
-            согласен с условиями политики обработки персональных данных </span
+            согласен с условиями 
+            <a href="/privacy.html">Политики обработки</a>&nbsp;персональных
+            данных </span
           >
         </div>
       </section>
@@ -1764,7 +1766,7 @@
             </svg>
             <span>Обзоры и рейтинги AV оборудования</span>
           </div>
-          <a href="/" class="footer-max footer__politic"
+          <a href="/privacy.html" class="footer-max footer__politic"
             >Политика конфиденциальности</a
           >
         </div>
@@ -1787,7 +1789,7 @@
               id="name"
               name="name"
               required
-              maxlength="3"
+              minlength="3"
             />
           </div>
           <div class="form__wrap">
@@ -1798,13 +1800,6 @@
               id="tel"
               name="tel"
             />
-          </div>
-
-          <div class="accept">
-            <span
-              >Нажимая кнопку "Отправить", я подтверждаю, что ознакомлен и
-              согласен с условиями политики обработки персональных данных </span
-            >
           </div>
 
           <button type="submit" class="button-yellow modal-btn">
@@ -1821,6 +1816,15 @@
               />
             </svg>
           </button>
+
+          <div class="accept">
+            <span
+              >Нажимая кнопку "Отправить", я подтверждаю, что ознакомлен и
+              согласен с условиями 
+              <a href="/privacy.html">Политики обработки</a>&nbsp;персональных
+              данных </span
+            >
+          </div>
         </form>
 
         <button class="closeConsultation closeAllModal">+</button>
@@ -1842,7 +1846,7 @@
               id="name"
               name="name"
               required
-              maxlength="3"
+              minlength="3"
             />
           </div>
           <div class="form__wrap">
@@ -1853,13 +1857,6 @@
               id="tel"
               name="tel"
             />
-          </div>
-
-          <div class="accept">
-            <span
-              >Нажимая кнопку "Отправить", я подтверждаю, что ознакомлен и
-              согласен с условиями политики обработки персональных данных </span
-            >
           </div>
 
           <button type="submit" class="button-yellow modal-btn">
@@ -1876,13 +1873,104 @@
               />
             </svg>
           </button>
+          <div class="accept">
+            <span
+              >Нажимая кнопку "Отправить", я подтверждаю, что ознакомлен и
+              согласен с условиями 
+              <a href="/privacy.html">Политики обработки</a>&nbsp;персональных
+              данных </span
+            >
+          </div>
         </form>
 
         <button class="closeConsultation closeAllModal">+</button>
       </div>
     </div>
-  </body>
-  <script src="./js/main.js"></script>
-  <script src="./js/sliders.js"></script>
-  <script src="./js/telMask.js"></script>
+
+    <div class="popup-choice darkening popup">
+      <div class="window">
+        <h2 class="modal-title">Получить полный разбор ресивера</h2>
+
+        <form class="from__modal" id="choiceForm">
+          <div class="form__wrap mb10">
+            <div class="receiver-select-wrap">
+              <select name="receiver-select" id="receiver-select">
+                <option disabled selected value>Выберите ресивер</option>
+                <option value="OnkyuTX-RZ70">OnkyuTX-RZ70</option>
+                <option value="Indera drx-8.4">Indera drx-8.4</option>
+                <option value="Yamaha RX-A8A">Yamaha RX-A8A</option>
+                <option value="Denon AVR-X8500H">Denon AVR-X8500H</option>
+                <option value="Marantz AV40">Marantz AV40</option>
+                <option value="NAD T778">NAD T778</option>
+                <option value="Anthem MRX1140">Anthem MRX1140</option>
+                <option value="Arcam AVR31">Arcam AVR31</option>
+                <option value="Pioneer SC-LX805">Pioneer SC-LX805</option>
+                <option value="Denon AVC-A1H">Denon AVC-A1H</option>
+                <option value="Arcam AVR11">Arcam AVR11</option>
+                <option value="Arcam AVR21">Arcam AVR21</option>
+              </select>
+            </div>
+
+            <label for="name">Введите ваше имя</label>
+            <input
+              placeholder="Игорь Пертрович"
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+            />
+          </div>
+          <div class="form__wrap">
+            <label for="tel">Введите ваш телефон</label>
+            <input
+              placeholder="+7 (___) __-__-__"
+              type="tel"
+              id="tel"
+              name="tel"
+            />
+          </div>
+
+          <button type="submit" class="button-yellow modal-btn">
+            Получить полный разбор ресивера<svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.05394 0.13208L2.05394 3.97823L18.5732 3.97823L0.130859 22.4205L2.8424 25.1321L21.2847 6.68977L21.2847 23.209L25.1309 23.209L25.1309 0.13208L2.05394 0.13208Z"
+                fill="#2B2B2B"
+              />
+            </svg>
+          </button>
+          <div class="accept">
+            <span
+              >Нажимая кнопку "Отправить", я подтверждаю, что ознакомлен и
+              согласен с условиями 
+              <a href="/privacy.html">Политики обработки</a>&nbsp;персональных
+              данных </span
+            >
+          </div>
+        </form>
+        <button class="closeConsultation closeAllModal">+</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    function toggleBlock(blockId) {
+      const block = document.getElementById(blockId);
+
+      if (block.classList.contains("show")) {
+        block.classList.remove("show");
+        block.nextElementSibling.innerHTML = `Читать полностью <span class="readAll"></span>`;
+      } else {
+        block.classList.add("show");
+        block.nextElementSibling.innerHTML = `Свернуть <span class="readAll-rotate"></span>`;
+      }
+    }
+  </script>
 </html>
