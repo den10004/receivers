@@ -31,11 +31,10 @@
 
 .window::-webkit-scrollbar {
     width: 0;
+    scrollbar-width: none;
 }
 
-.window::-moz-scrollbar {
-    width: 0;
-}
+
 
 
 .window>h2 {
