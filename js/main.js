@@ -94,8 +94,8 @@ openChoiceModal.addEventListener("click", openChoiceModalFunc);
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("consultForm");
-  const responseMessage = document.getElementById("responseMessage");
-
+  sendForm(form);
+  /*
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
@@ -110,18 +110,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       const message = await response.text();
-      responseMessage.textContent = message;
-      console.log(response);
+      // responseMessage.textContent = message;
+      alert(message);
+      closeAllModals();
     } catch (error) {
       console.error("Произошла ошибка при отправке формы.", error);
-      responseMessage.textContent = "Произошла ошибка при отправке формы.";
+      alert("Произошла ошибка при отправке формы.", error);
+      //responseMessage.textContent = "Произошла ошибка при отправке формы.";
     }
-  });
+  });*/
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("compilationForm");
-  const responseMessage = document.getElementById("responseMessage");
+  sendForm(form);
+  /*
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
@@ -137,11 +140,92 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       const message = await response.text();
-      responseMessage.textContent = message;
-      console.log(response);
+      //responseMessage.textContent = message;
+      alert(message);
+      closeAllModals();
     } catch (error) {
       console.error("Произошла ошибка при отправке формы.", error);
-      responseMessage.textContent = "Произошла ошибка при отправке формы.";
+      alert("Произошла ошибка при отправке формы.", error);
+      //responseMessage.textContent = "Произошла ошибка при отправке формы.";
+    }
+  });*/
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("choiceForm");
+  sendForm(form);
+  /*
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch("sendforms.php", {
+        method: "POST",
+        body: formData,
+      });
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+
+      const message = await response.text();
+      alert(message);
+      closeAllModals();
+    } catch (error) {
+      console.error("Произошла ошибка при отправке формы.", error);
+      alert("Произошла ошибка при отправке формы.", error);
+      //responseMessage.textContent = "Произошла ошибка при отправке формы.";
+    }
+  });*/
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("helpForm");
+
+  sendForm(form);
+  /*
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch("sendforms.php", {
+        method: "POST",
+        body: formData,
+      });
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+
+      const message = await response.text();
+      alert(message);
+    } catch (error) {
+      console.error("Произошла ошибка при отправке формы.", error);
+      alert("Произошла ошибка при отправке формы.", error);
+      //responseMessage.textContent = "Произошла ошибка при отправке формы.";
+    }
+  });*/
+});
+
+function sendForm(form) {
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+    try {
+      const formData = new FormData(form);
+      const response = await fetch("sendforms.php", {
+        method: "POST",
+        body: formData,
+      });
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+
+      const message = await response.text();
+      alert(message);
+      closeAllModals();
+    } catch (error) {
+      console.error("Произошла ошибка при отправке формы.", error);
+      alert("Произошла ошибка при отправке формы.", error);
+      //responseMessage.textContent = "Произошла ошибка при отправке формы.";
     }
   });
-});
+}
