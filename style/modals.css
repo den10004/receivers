@@ -11,7 +11,7 @@
 .window {
     max-width: 800px;
     overflow-y: scroll;
-    padding: 64px 64px 65px 64px;
+    padding: 40px 40px 40px 40px;
     height: auto;
     max-height: 95vh;
     position: absolute;
@@ -51,6 +51,11 @@
 .popup-compilation {
     display: none;
 }
+
+.popup-choice {
+    display: none;
+}
+
 
 @-webkit-keyframes modalMenu {
     from {
@@ -124,7 +129,7 @@
 }
 
 .modal-btn {
-    margin-top: 30px;
+    margin: 20px 0;
     width: 100%;
     padding: 34px 0 !important;
     font-size: 24px !important;
@@ -151,9 +156,6 @@
 
     .modal-btn {
         padding: 16px 0 !important;
-    }
-
-    .modal-btn {
         font-size: 20px !important;
     }
 }
@@ -180,7 +182,6 @@
     }
 
     .modal-btn {
-        margin-top: 23px;
-
+        margin: 20px 0;
     }
 }

@@ -33,8 +33,10 @@ const headerOpen = document.querySelector(".header-open");
 const headerMenu = document.querySelector(".header__links");*/
 const openConsultModal = document.querySelectorAll(".cons-open");
 const openCompilationModal = document.querySelectorAll(".compilationOpenModal");
+const openChoiceModal = document.querySelector(".openChoiceModal");
 const closeAllModal = document.querySelectorAll(".closeAllModal");
 const popup = document.querySelectorAll(".popup");
+const popupChoiceModal = document.querySelector(".popup-choice");
 const consultModal = document.querySelector(".popup-consultation");
 const CompilationModal = document.querySelector(".popup-compilation");
 
@@ -55,6 +57,10 @@ function openHeader() {
 */
 function openConsultModalFunc() {
   consultModal.style.display = "block";
+}
+
+function openChoiceModalFunc() {
+  popupChoiceModal.style.display = "block";
 }
 
 function openConsultCompilationFunc(title) {
@@ -83,6 +89,8 @@ openCompilationModal.forEach((el) =>
     openConsultCompilationFunc(title);
   })
 );
+
+openChoiceModal.addEventListener("click", openChoiceModalFunc);
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("consultForm");

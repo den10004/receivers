@@ -74,6 +74,26 @@ button {
     margin-left: 10px;
 }
 
+
+.receiver-select-wrap select {
+    height: 70px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 25px;
+    background: var(--color-grayf7);
+    border: none;
+}
+
+#receiver-select {
+    width: 100%;
+}
+
+#receiver-select option {
+    width: 100%;
+
+}
+
 @media screen and (max-width: 1024px) {
     .button-yellow {
         font-size: 16px;
@@ -156,10 +176,11 @@ input {
     border: none;
     padding-left: 30px;
     box-sizing: border-box;
+    font-size: 25px;
 }
 
 input::placeholder {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 24px;
     color: var(--color-gray);
@@ -269,6 +290,18 @@ label {
     .description {
         font-size: 28px;
     }
+
+    input {
+        font-size: 22px;
+    }
+
+    .receiver-select-wrap select {
+        height: 50px;
+        margin-bottom: 10px;
+        font-size: 14px;
+
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -282,6 +315,14 @@ label {
 
     .accept {
         font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    input::placeholder {
+        font-size: 14px;
+        line-height: 16.8px;
     }
 }
 
@@ -309,11 +350,6 @@ label {
     .accept {
         font-size: 11px;
         line-height: 14.4px;
-    }
-
-    input::placeholder {
-        font-size: 14px;
-        line-height: 16.8px;
     }
 
     label {

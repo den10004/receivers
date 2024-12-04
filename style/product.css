@@ -69,7 +69,7 @@
     width: 408px;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
     height: 600px;
-    padding: 30px 35px 40px 35px;
+    padding: 30px 35px 60px 35px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@
 }
 
 .product__price>.subtitle {
-    margin: 20px 0px 45px 0;
+    margin: 20px 0px 60px 0;
 }
 
 .price__block {
@@ -247,7 +247,7 @@
 @media screen and (max-width: 1024px) {
     .product__price {
         width: 308px;
-        padding: 20px 25px 20px 25px;
+        padding: 20px 25px 40px 25px;
     }
 
     .thumbs-slider {
