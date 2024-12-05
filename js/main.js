@@ -107,7 +107,6 @@ function sendForm(form) {
       }
 
       const message = await response.text();
-      alert(message);
       closeAllModals();
       window.location.href = "/thanks.html";
     } catch (error) {

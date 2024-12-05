@@ -100,7 +100,7 @@
       </section>
 
       <section class="thanks">
-        <h1 class="headline">, спасибо за заявку!</h1>
+        <h1 class="headline"><span id="output"></span>, спасибо за заявку!</h1>
         <p class="description">Мы свяжемся с вами в ближайшее время</p>
         <span>
           График работы: Пн-Пт с 9.00 до 18.00 по МСК <br /><br />
@@ -233,4 +233,14 @@
       <button class="closeConsultation closeAllModal">+</button>
     </div>
   </div>
+
+  <script>
+    outputElement = document.getElementById("output");
+    const dataFromLocalStorage = localStorage.getItem("name");
+    if (dataFromLocalStorage) {
+      outputElement.innerHTML = `${dataFromLocalStorage}`;
+    } else {
+      console.log("данных нет");
+    }
+  </script>
 </html>
