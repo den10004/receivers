@@ -43,13 +43,22 @@ function openHeader() {
   headerMenu.style.display = "flex";
 }
 */
+function clearInputs() {
+  const inputs = document.querySelectorAll("input");
+  inputs.forEach((input) => {
+    input.value = "";
+  });
+}
+
 function openConsultModalFunc() {
   console.log();
   consultModal.style.display = "block";
+  clearInputs();
 }
 
 function openChoiceModalFunc() {
   popupChoiceModal.style.display = "block";
+  clearInputs();
 }
 
 function openConsultCompilationFunc(title) {
@@ -76,6 +85,7 @@ openConsultModal.forEach((el) =>
     const hiddenInput = document.getElementById("titleHiddenConsultation");
     hiddenInput.value = title;
     openConsultModalFunc();
+    clearInputs();
   })
 );
 
@@ -83,6 +93,7 @@ openCompilationModal.forEach((el) =>
   el.addEventListener("click", function (e) {
     const title = e.target.dataset.title;
     openConsultCompilationFunc(title);
+    clearInputs();
   })
 );
 
@@ -115,7 +126,6 @@ function sendForm(form) {
       const formData = new FormData(form);
       let object = {};
       formData.forEach((value, key) => (object[key] = value));
-      console.log(object);
       localStorage.setItem("name", object.name);
       const response = await fetch("sendforms.php", {
         method: "POST",
@@ -124,7 +134,6 @@ function sendForm(form) {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
       }
-      //const message = await response.text();
       closeAllModals();
       window.location.href = "/thanks.html";
     } catch (error) {
