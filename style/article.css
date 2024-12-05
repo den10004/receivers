@@ -78,14 +78,22 @@
   .article__img>img {
     width: 450px;
   }
-}
 
-@media screen and (max-width: 1024px) {
   .headline-style-article {
     font-size: 36px;
     line-height: 44px;
   }
+}
 
+
+@media screen and (max-width: 1070px) {
+  .article__text>div>a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .article__text>.description {
     font-size: 22px;
     line-height: 32px;
