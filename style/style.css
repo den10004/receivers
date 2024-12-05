@@ -48,6 +48,8 @@ a {
     cursor: pointer;
 }
 
+
+
 button {
     cursor: pointer;
     border: none;
@@ -72,6 +74,23 @@ button {
     width: 15px;
     height: 15px;
     margin-left: 10px;
+}
+
+
+.wrap {
+    max-width: 1806px;
+    padding: 0 50px 0 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .wrap {
+        max-width: 1704px;
+        padding: 0 20px 0 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
 }
 
 
@@ -122,12 +141,10 @@ button {
     }
 }
 
-.wrap {
-    max-width: 1670px;
-    padding: 0 20px 0 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
+
+
+
+
 
 .wrap-without-padding {
     max-width: 1670px;

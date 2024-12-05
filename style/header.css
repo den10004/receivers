@@ -56,6 +56,11 @@
     }
 }
 
+@media screen and (max-width: 1070px) {
+    .header__head>span {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .header {
@@ -77,11 +82,7 @@
 }
 
 
-@media screen and (max-width: 700px) {
-    .header__head>span {
-        display: none;
-    }
-}
+
 
 /*
 @media screen and (max-width: 500px) {
