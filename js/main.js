@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("helpForm");
-
   sendForm(form);
 });
 
@@ -100,6 +99,9 @@ function sendForm(form) {
         method: "POST",
         body: formData,
       });
+      for (var pair of formData.entries()) {
+        console.log(pair[0] + ", " + pair[1]);
+      }
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
       }
@@ -107,6 +109,7 @@ function sendForm(form) {
       const message = await response.text();
       alert(message);
       closeAllModals();
+      window.location.href = "/thanks.html";
     } catch (error) {
       console.error("Произошла ошибка при отправке формы.", error);
       alert("Произошла ошибка при отправке формы.", error);

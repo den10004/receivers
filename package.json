@@ -10,8 +10,5 @@
   },
   "devDependencies": {
     "vite": "^5.4.10"
-  },
-  "dependencies": {
-    "vite-plugin-php": "^1.0.67"
   }
 }

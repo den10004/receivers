@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
-import php from "vite-plugin-php";
 
 export default defineConfig({
+  assetsInclude: ["**/*.ico"],
   build: {
     outDir: "./dist",
     emptyOutDir: true,
@@ -12,15 +12,5 @@ export default defineConfig({
         privacy: "./privacy.html",
       },
     },
-  } /*
-  plugins: [
-    php({
-      //  entry: "src/index.php",
-      entry: "./sendforms.php",
-      server: {
-        host: "0.0.0.0",
-        port: 3000,
-      },
-    }),
-  ],*/,
+  },
 });
