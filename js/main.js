@@ -95,13 +95,13 @@ function sendForm(form) {
     event.preventDefault();
     try {
       const formData = new FormData(form);
+      let object = {};
+      formData.forEach((value, key) => (object[key] = value));
+      localStorage.setItem("name", object.name);
       const response = await fetch("sendforms.php", {
         method: "POST",
         body: formData,
       });
-      for (var pair of formData.entries()) {
-        console.log(pair[0] + ", " + pair[1]);
-      }
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
       }

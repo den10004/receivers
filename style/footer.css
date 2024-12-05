@@ -50,30 +50,12 @@
     color: var(--color-gray);
 }
 
-/*
-.footer-bg>.wrap>button {
-    padding: 27px;
-    width: 457px;
-    height: 80px;
-}
-
-*/
 
 @media screen and (max-width: 1280px) {
     .footer__logo>svg {
         width: 200px;
     }
 }
-
-/*
-@media screen and (max-width: 1024px) {
-    .footer-bg>.wrap>button {
-        padding: 0;
-        width: 270px;
-        height: 70px;
-    }
-}
-*/
 
 @media screen and (max-width: 768px) {
 
