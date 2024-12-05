@@ -220,7 +220,10 @@
               Получите консультацию по выбору AV-ресивера
             </div>
 
-            <button class="button-yellow cons-open">
+            <button
+              class="button-yellow cons-open"
+              onclick="toggleBlock('block2')"
+            >
               Получить консультацию
               <svg
                 width="26"
@@ -284,12 +287,14 @@
       <section class="info">
         <div class="info__text">
           <h2 class="headline-style">
-            Получите подборку акустики максимально подходящих для Onkyo TX-RZ70
+            Получите подборку акустики максимально подходящих для<span
+              >Onkyo TX-RZ70</span
+            >
             B M2
           </h2>
           <button
             class="button-yellow compilationOpenModal"
-            data-title="Отправьте заявку и получите подборку акустики для Onkyo TX-RZ70 B M2"
+            data-title="Onkyo TX-RZ70 B M2"
           >
             Получить подборку акустики
             <svg
@@ -310,6 +315,7 @@
           <img src="./images/acustic.webp" alt="акустика" />
         </div>
       </section>
+
       <section class="product" id="section2">
         <h2 class="headline">Integra DRX-8.4</h2>
 
@@ -445,7 +451,7 @@
           </h2>
           <button
             class="button-yellow compilationOpenModal"
-            data-title="Отправьте заявку и получите подборку акустики для Integra DRX-8.4"
+            data-title="Integra DRX-8.4"
           >
             Получить подборку акустики
             <svg
@@ -595,7 +601,7 @@
           </h2>
           <button
             class="button-yellow compilationOpenModal"
-            data-title="Отправьте заявку и получите подборку акустики для Yamaha RX-A8A"
+            data-title="Yamaha RX-A8A"
           >
             Получить подборку акустики
             <svg
@@ -752,7 +758,7 @@
           </h2>
           <button
             class="button-yellow compilationOpenModal"
-            data-title="Отправьте заявку и получите подборку акустики для Denon AVC-X8500HA"
+            data-title="Denon AVC-X8500HA"
           >
             Получить подборку акустики
             <svg
@@ -909,7 +915,7 @@
           </h2>
           <button
             class="button-yellow compilationOpenModal"
-            data-title="Отправьте заявку и получите подборку акустики для Marantz Cinema 40"
+            data-title="Marantz Cinema 40"
           >
             Получить подборку акустики
             <svg
@@ -1064,7 +1070,7 @@
           </h2>
           <button
             class="button-yellow compilationOpenModal"
-            data-title="Отправьте заявку и получите подборку акустики для AD T778"
+            data-title="AD T778"
           >
             Получить подборку акустики
             <svg
@@ -1220,7 +1226,7 @@
           </h2>
           <button
             class="button-yellow compilationOpenModal"
-            data-title="Отправьте заявку и получите подборку акустики для Anthem MRX1140"
+            data-title="Anthem MRX1140"
           >
             Получить подборку акустики
             <svg
@@ -1351,7 +1357,7 @@
           </h2>
           <button
             class="button-yellow compilationOpenModal"
-            data-title="Отправьте заявку и получите подборку акустики для Arcam AVR31"
+            data-title="Arcam AVR31"
           >
             Получить подборку акустики
             <svg
@@ -1646,6 +1652,12 @@
         </h2>
 
         <form class="from__modal" id="consultForm">
+          <input
+            type="hidden"
+            id="titleHiddenConsultation"
+            name="title"
+            value=""
+          />
           <div class="form__wrap mb10">
             <label for="name">Введите ваше имя</label>
             <input
@@ -1703,6 +1715,12 @@
         </h2>
 
         <form class="from__modal" id="compilationForm">
+          <input
+            type="hidden"
+            id="titleHiddenConmpilation"
+            name="title"
+            value=""
+          />
           <div class="form__wrap mb10">
             <label for="name">Введите ваше имя</label>
             <input
@@ -1840,9 +1858,5 @@
         block.nextElementSibling.innerHTML = `Свернуть <span class="readAll-rotate"></span>`;
       }
     }
-  </script>
-
-  <script>
-    console.log(localStorage.name);
   </script>
 </html>

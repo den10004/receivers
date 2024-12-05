@@ -44,6 +44,7 @@ function openHeader() {
 }
 */
 function openConsultModalFunc() {
+  console.log();
   consultModal.style.display = "block";
 }
 
@@ -54,7 +55,10 @@ function openChoiceModalFunc() {
 function openConsultCompilationFunc(title) {
   CompilationModal.style.display = "block";
   const modalTitle = document.querySelector(".modal-title");
-  modalTitle.textContent = title;
+  const hiddenInput = document.getElementById("titleHiddenConmpilation");
+  console.log(hiddenInput.value);
+  hiddenInput.value = title;
+  modalTitle.textContent = `Отправьте заявку и получите подборку акустики для ${title}`;
 }
 /*
 headerOpen.addEventListener("click", openHeader);*/
@@ -67,6 +71,10 @@ closeAllModal.forEach((el) =>
 
 openConsultModal.forEach((el) =>
   el.addEventListener("click", function (e) {
+    const title =
+      e.target.parentNode.parentNode.previousElementSibling.innerHTML;
+    const hiddenInput = document.getElementById("titleHiddenConsultation");
+    hiddenInput.value = title;
     openConsultModalFunc();
   })
 );
@@ -107,6 +115,7 @@ function sendForm(form) {
       const formData = new FormData(form);
       let object = {};
       formData.forEach((value, key) => (object[key] = value));
+      console.log(object);
       localStorage.setItem("name", object.name);
       const response = await fetch("sendforms.php", {
         method: "POST",
@@ -115,7 +124,6 @@ function sendForm(form) {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
       }
-
       //const message = await response.text();
       closeAllModals();
       window.location.href = "/thanks.html";
