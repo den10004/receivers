@@ -86,6 +86,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("compilationForm");
+  sendForm(form);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("choiceForm");
+  sendForm(form);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("helpForm");
   sendForm(form);
 });
@@ -106,7 +116,7 @@ function sendForm(form) {
         throw new Error(`Network response was not ok: ${response.status}`);
       }
 
-      const message = await response.text();
+      //const message = await response.text();
       closeAllModals();
       window.location.href = "/thanks.html";
     } catch (error) {

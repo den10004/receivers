@@ -237,6 +237,7 @@
   <script>
     outputElement = document.getElementById("output");
     const dataFromLocalStorage = localStorage.getItem("name");
+    localStorage.clear();
     if (dataFromLocalStorage) {
       outputElement.innerHTML = `${dataFromLocalStorage}`;
     } else {
