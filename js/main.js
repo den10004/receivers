@@ -51,7 +51,6 @@ function clearInputs() {
 }*/
 
 function openConsultModalFunc() {
-  console.log();
   consultModal.style.display = "block";
 }
 
@@ -63,7 +62,6 @@ function openConsultCompilationFunc(title) {
   CompilationModal.style.display = "block";
   const modalTitle = document.querySelector(".modal-title");
   const hiddenInput = document.getElementById("titleHiddenConmpilation");
-  console.log(hiddenInput.value);
   hiddenInput.value = title;
   modalTitle.textContent = `Отправьте заявку и получите подборку акустики для ${title}`;
 }
