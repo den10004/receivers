@@ -43,6 +43,7 @@ function openHeader() {
   headerMenu.style.display = "flex";
 }
 
+
 function clearInputs() {
   const inputs = document.querySelectorAll("input");
   inputs.forEach((input) => {
