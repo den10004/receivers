@@ -55,6 +55,22 @@
         margin: 50px 0;
         padding: 40px 40px 40px 40px;
     }
+
+    .formhelp>h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .formhelp>h2 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .formhelp>h2 {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 1320px) {
@@ -63,7 +79,6 @@
     }
 
 }
-
 
 
 @media screen and (max-width: 1160px) {
@@ -95,5 +110,33 @@
     .formhelp {
         padding: 30px 10px;
         border-radius: 16px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .formhelp>h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .formhelp>h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .formhelp>h2 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .formhelp>h2 {
+        font-size: 24px;
+        line-height: 30px;
     }
 }
