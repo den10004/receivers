@@ -303,6 +303,7 @@ label {
     }
 
     .receiver-select-wrap select {
+        padding-left: 20px;
         height: 50px;
         margin-bottom: 10px;
         font-size: 14px;
@@ -315,6 +316,10 @@ label {
     .readAll>svg {
         margin-left: 10px;
         width: 15px;
+    }
+
+    .form__block>input {
+        height: 50px;
     }
 }
 
