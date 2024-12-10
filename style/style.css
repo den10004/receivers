@@ -142,16 +142,6 @@ button {
 }
 
 
-
-
-
-
-.wrap-without-padding {
-    max-width: 1670px;
-    padding: 0;
-    margin: 0 auto;
-}
-
 .headline {
     font-size: 64px;
     font-weight: 600;
